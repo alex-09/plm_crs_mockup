@@ -4,10 +4,10 @@ import {
     createBrowserRouter,
     RouterProvider,
   } from "react-router-dom";
-import './style.scss';
+import './styles/sidebar-style.css';
 
 //routes
-import App from './App.jsx';
+import Dashboard from './routes/Dashboard.jsx';
 import Enroll from './routes/Enroll';
 import Account from './routes/Account';
 import Classroom from './routes/Classroom';
@@ -16,7 +16,7 @@ import ViewInfo from './routes/ViewInfo';
 const router = createBrowserRouter([
     {
         path: '/',
-        element: <App/>,
+        element: <Dashboard/>,
     },
     {
         path: '/enroll',
@@ -38,7 +38,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <>
-        <div className='App'>
+        <div className='pages'>
             <RouterProvider router={router} />
         </div>
     </>
