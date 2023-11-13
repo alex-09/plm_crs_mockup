@@ -1,0 +1,17 @@
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+}
+.active-date-bg {
+    background: #ab8b2b !important;
+    color: white !important;
+    font-weight: bolder !important;
+} 
+.react-calendar__tile--active {
+    background-color: #800000 ;
+}
+.icon {
+    color: black !important;
+}

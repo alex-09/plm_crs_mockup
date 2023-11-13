@@ -5,6 +5,7 @@ import {
     RouterProvider,
   } from "react-router-dom";
 import './styles/sidebar-style.css';
+import './styles/index.css';
 
 //routes
 import Dashboard from './routes/Dashboard.jsx';
