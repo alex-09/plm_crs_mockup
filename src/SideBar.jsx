@@ -8,6 +8,7 @@ import logout from "./assets/icons/navigation/logout.svg";
 function SideBar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isSubMenuOpenEroll, setSubMenuOpenEnroll] = useState(false);
+  const [subMenuIconRotateEnroll, setSubMenuIconRotateEnroll] = useState('rotate-180');
 
   const openSideBar = () => {
     setIsOpen(!isOpen);
@@ -17,6 +18,11 @@ function SideBar() {
   const openSubMenu = () => {
     setSubMenuOpenEnroll(!isSubMenuOpenEroll);
     console.log(isSubMenuOpenEroll);
+    if(isSubMenuOpenEroll == true){
+        setSubMenuIconRotateEnroll('rotate-180')
+    } else {
+        setSubMenuIconRotateEnroll('')
+    }
   }
 
   const subMenuOpenClassEnroll = isSubMenuOpenEroll ? 'sub-menu-open-enroll' : 'sub-menu';
@@ -72,7 +78,7 @@ function SideBar() {
                         <span className="grow shrink-0"></span>
                     </div>
 
-                    <svg onClick={openSubMenu} className="text shrink justify-end mr-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg onClick={openSubMenu} className={`transition duration-500 text shrink justify-end mr-2 ${subMenuIconRotateEnroll}`} width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4.47145 5.52858C4.2111 5.26823 3.78899 5.26823 3.52864 5.52858C3.26829 5.78892 3.26829 6.21103 3.52864 6.47138L7.52864 10.4714C7.78899 10.7317 8.2111 10.7317 8.47144 10.4714L12.4714 6.47138C12.7318 6.21103 12.7318 5.78892 12.4714 5.52858C12.2111 5.26823 11.789 5.26823 11.5286 5.52858L8.00004 9.05717L4.47145 5.52858Z" fill="#DDCECE"/>
                     </svg>
                 </div>
@@ -83,24 +89,23 @@ function SideBar() {
         {/* submenu */}
         <div className={`flex flex-col  ${subMenuOpenClassEnroll}`}>
             <div className='flex border-solid border-l-2 flex-col'>
+                {/* use props here to change the content of the page */}
                 <NavLink to="/enroll" className="linkStyle">
                     <button className="button flex align-middle h-full">
-                        {/* <svg className="material-icons icon-size sub-menu-icons mr-5" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M33.3333 20V31C33.3333 32.8856 33.3333 33.8284 32.7475 34.4142C32.1617 35 31.2189 35 29.3333 35H10.8333C9.74768 35 9.20488 35 8.76451 34.8612C7.83102 34.5668 7.0998 33.8356 6.80548 32.9021C6.66663 32.4617 6.66663 31.9189 6.66663 30.8333V30.8333C6.66663 29.7477 6.66663 29.2049 6.80548 28.7645C7.0998 27.8311 7.83102 27.0998 8.76451 26.8055C9.20488 26.6667 9.74769 26.6667 10.8333 26.6667H29.3333C31.2189 26.6667 32.1617 26.6667 32.7475 26.0809C33.3333 25.4951 33.3333 24.5523 33.3333 22.6667V9C33.3333 7.11438 33.3333 6.17157 32.7475 5.58579C32.1617 5 31.2189 5 29.3333 5H10.6666C8.78101 5 7.8382 5 7.25241 5.58579C6.66663 6.17157 6.66663 7.11438 6.66663 9V30.8333" stroke="#DDCECE" strokeWidth="2"/>
-                            <path d="M15 16.6666L17.6262 19.2928C18.0168 19.6833 18.6499 19.6833 19.0404 19.2928L25 13.3333" stroke="#DDCECE" strokeWidth="2" strokeLinecap="round"/>
-                        </svg> */}
                         <span className="sub-menu-icons mr-5">Step 1:</span>
-                        <div className="flex items-center">View Profile</div>
+                        <div className="flex items-center">View Schedule</div>
                     </button>
                 </NavLink>
                 <NavLink to="/enroll" className="linkStyle">
                 <button className="button flex">
-                    {/* <svg className="material-icons icon-size sub-menu-icons mr-5" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M33.3333 20V31C33.3333 32.8856 33.3333 33.8284 32.7475 34.4142C32.1617 35 31.2189 35 29.3333 35H10.8333C9.74768 35 9.20488 35 8.76451 34.8612C7.83102 34.5668 7.0998 33.8356 6.80548 32.9021C6.66663 32.4617 6.66663 31.9189 6.66663 30.8333V30.8333C6.66663 29.7477 6.66663 29.2049 6.80548 28.7645C7.0998 27.8311 7.83102 27.0998 8.76451 26.8055C9.20488 26.6667 9.74769 26.6667 10.8333 26.6667H29.3333C31.2189 26.6667 32.1617 26.6667 32.7475 26.0809C33.3333 25.4951 33.3333 24.5523 33.3333 22.6667V9C33.3333 7.11438 33.3333 6.17157 32.7475 5.58579C32.1617 5 31.2189 5 29.3333 5H10.6666C8.78101 5 7.8382 5 7.25241 5.58579C6.66663 6.17157 6.66663 7.11438 6.66663 9V30.8333" stroke="#DDCECE" strokeWidth="2"/>
-                        <path d="M15 16.6666L17.6262 19.2928C18.0168 19.6833 18.6499 19.6833 19.0404 19.2928L25 13.3333" stroke="#DDCECE" strokeWidth="2" strokeLinecap="round"/>
-                    </svg> */}
                     <span className="sub-menu-icons mr-5">Step 2:</span>
-                    <div className="flex items-center">View Grades</div>
+                    <div className="flex items-center">View Assessment</div>
+                </button>
+                </NavLink>
+                <NavLink to="/enroll" className="linkStyle">
+                <button className="button flex">
+                    <span className="sub-menu-icons mr-5">Step 3:</span>
+                    <div className="flex items-center">Register</div>
                 </button>
                 </NavLink>
             </div>

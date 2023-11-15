@@ -129,13 +129,13 @@ export default function Dashboard () {
             </div>
 
             {/* Change into a background */}
-            <div className="fixed bottom-0 right-0 z-0">
+            {/* <div className="absolute bottom-0 right-0 z-0">
                 <img
                 src={watermark_plm}
                 alt="Fixed Image"
                 className="w-52 h-auto "
                 />
-            </div>
+            </div> */}
         </main>
     </>
     );

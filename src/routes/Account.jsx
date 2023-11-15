@@ -12,14 +12,14 @@ export default function Account () {
         studentNumber: '202011847',
         studentType: 'Regular',
         regStatus: 'Paid', 
-        email: 'ahoo@yahoo.com',
+        email: 'juandelaxruz@gmail.com',
         mobileNum: '123-456-7890',
         lastName: 'Ling',
-        firstName: 'Lexi',
+        firstName: 'Andrei',
         midName: 'Aldave',
         gender: 'male',
         civStatus: 'taken',
-        citizenship: 'marsian'
+        citizenship: 'Marsian'
     };
 
     return (
@@ -65,23 +65,23 @@ export default function Account () {
                         <p className="text-lg font-bold">Personal Information</p>
                             <p className="my-5"></p>
                             
-                            <p className="text-lg">Last Name:</p>
-                            <p className="text-lg">{studentInfo.lastName}</p>
+                            <p className="pl-10 text-lg font-extrabold">Last Name:</p>
+                            <p className="pl-10 text-lg">{studentInfo.lastName}</p>
 
-                            <p className="text-lg">First Name:</p>
-                            <p className="text-lg">{studentInfo.firstName}</p>
+                            <p className="pl-10 text-lg font-extrabold">First Name:</p>
+                            <p className="pl-10 text-lg">{studentInfo.firstName}</p>
 
-                            <p className="text-lg">Middle Name:</p>
-                            <p className="text-lg">{studentInfo.midName}</p>
+                            <p className="pl-10 text-lg font-extrabold">Middle Name:</p>
+                            <p className="pl-10 text-lg">{studentInfo.midName}</p>
 
-                            <p className="text-lg">Gender:</p>
-                            <p className="text-lg">{studentInfo.gender}</p>
+                            <p className="pl-10 text-lg font-extrabold">Gender:</p>
+                            <p className="pl-10 text-lg">{studentInfo.gender}</p>
 
-                            <p className="text-lg">Civil Status:</p>
-                            <p className="text-lg">{studentInfo.civStatus}</p>
+                            <p className="pl-10 text-lg font-extrabold">Civil Status:</p>
+                            <p className="pl-10 text-lg">{studentInfo.civStatus}</p>
 
-                            <p className="text-lg">Citizenship:</p>
-                            <p className="text-lg">{studentInfo.citizenship}</p>
+                            <p className="pl-10 text-lg font-extrabold">Citizenship:</p>
+                            <p className="pl-10 text-lg">{studentInfo.citizenship}</p>
                             
                         <p></p>
                         <p className="my-2"></p>
@@ -89,26 +89,26 @@ export default function Account () {
                         <p className="text-lg font-bold">Student Information</p>
                             <p className="my-5"></p>
 
-                            <p className="text-lg">Student Number:</p>
-                            <p className="text-lg">{studentInfo.firstName}</p>
+                            <p className="pl-10 text-lg font-extrabold">Student Number:</p>
+                            <p className="pl-10 text-lg">{studentInfo.studentNumber}</p>
 
-                            <p className="text-lg">Pedigree:</p>
-                            <p className="text-lg">{studentInfo.pedigree}</p>
+                            <p className="pl-10 text-lg font-extrabold">Pedigree:</p>
+                            <p className="pl-10 text-lg">{studentInfo.pedigree}</p>
 
-                            <p className="text-lg">Student Type:</p>
-                            <p className="text-lg">{studentInfo.studentType}</p>
+                            <p className="pl-10 text-lg font-extrabold">Student Type:</p>
+                            <p className="pl-10 text-lg">{studentInfo.studentType}</p>
 
-                            <p className="text-lg">Registration Status:</p>
-                            <p className="text-lg">{studentInfo.regStatus}</p>
+                            <p className="pl-10 text-lg font-extrabold">Registration Status:</p>
+                            <p className="pl-10 text-lg">{studentInfo.regStatus}</p>
 
-                            <p className="text-lg">Program:</p>
-                            <p className="text-lg">{studentInfo.program}</p>
+                            <p className="pl-10 text-lg font-extrabold">Program:</p>
+                            <p className="pl-10 text-lg">{studentInfo.program}</p>
 
-                            <p className="text-lg">Year Level:</p>
-                            <p className="text-lg">{studentInfo.yearLevel}</p>
+                            <p className="pl-10 text-lg font-extrabold">Year Level:</p>
+                            <p className="pl-10 text-lg">{studentInfo.yearLevel}</p>
 
-                            <p className="text-lg">Official PLM Email:</p>
-                            <p className="text-lg">{studentInfo.plmEmail}</p>
+                            <p className="pl-10 text-lg font-extrabold">Official PLM Email:</p>
+                            <p className="pl-10 text-lg">{studentInfo.plmEmail}</p>
                     </div>
                 </div>
 
