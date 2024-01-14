@@ -1,6 +1,5 @@
 import { NavLink, Outlet } from "react-router-dom";
 import SideBar from "../SideBar";
-import watermark_plm from "../assets/watermark_plm.png";
 import '../styles/index.css';
 import {AiOutlineDown} from "react-icons/ai";
 
@@ -99,28 +98,10 @@ export default function Dashboard () {
                             </thead>
                             <tbody className="bg-white">
                                 <tr>
-                                    <td className="text-center">The Sliding Mr. Bones (Next Stop, Pottersville)</td>
-                                    <td className="text-center">Malcolm Lockyer</td>
-                                    <td className="text-center">1961</td>
-                                    <td className="text-center">Cleared</td>
-                                </tr>
-                                <tr>
-                                    <td className="text-center">Witchy Woman</td>
-                                    <td className="text-center">The Eagles</td>
-                                    <td className="text-center">1972</td>
-                                    <td className="text-center">Cleared</td>
-                                </tr>
-                                <tr>
-                                    <td className="text-center">Shining Star</td>
-                                    <td className="text-center">Earth, Wind, and Fire</td>
-                                    <td className="text-center">1975</td>
-                                    <td className="text-center">Cleared</td>
-                                </tr>
-                                <tr>
-                                    <td className="text-center">Shining Star</td>
-                                    <td className="text-center">Earth, Wind, and Fire</td>
-                                    <td className="text-center">1975</td>
-                                    <td className="text-center">Cleared</td>
+                                    <td className="text-center">Deficiencies</td>
+                                    <td className="text-center">Remarks</td>
+                                    <td className="text-center">10/25/2023</td>
+                                    <td className="text-center">CLEARED</td>
                                 </tr>
                             </tbody>
                         </table>

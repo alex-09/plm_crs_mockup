@@ -1,7 +1,6 @@
 import { Outlet } from "react-router-dom";
 import SideBar from "../SideBar";
 import profile_pic from "../assets/logo.png";
-import watermark_plm from "../assets/watermark_plm.png";
 
 export default function Account () {
     const studentInfo = {
@@ -26,20 +25,25 @@ export default function Account () {
     <>
         <Outlet/>
         <SideBar/>
-        <main>
-            <div className="divide-y divide-slate-500 flex flex-col items-center justify-center z-50 mb-10">
+        <main >
+            <div className="flex flex-col items-center justify-center z-50 mb-10">
             
 
                 {/* Gold color PROFILE text in the middle top */}
                 <h1 className="font-sans text-3xl font-bold text-plm-gold mt-10 mb-5">PROFILE</h1>
 
+                <div className="w-full bg-black h-px"></div>
+
                 {/* Profile picture with email and mobile number */}
-                <div className="flex justify-center content-end mt-4 w-full p-5">
-                    <div className="flex-shrink-0 w-1/6 flex justify-center">
-                        <img src={profile_pic} alt="Profile" className="w-26 h-26 rounded-full" />
+                <div className="flex justify-center content-end mt-4 w-full">
+                    
+                    <div className="align-top justify-center  mr-5">
+                        <img src={profile_pic} className="align-baseline pt-10" alt="Profile" />
                     </div>
-                    <div className="ml-4 w-1/3 grid grid-cols-2 gap-2 content-end">
-                    <p className="text-lg font-bold">Official PLM Email: </p>
+                    <div className="ml-4 w-1/3 grid grid-cols-2 gap-2 content-end bg-white p-[2rem] w-[600px] rounded-xl">
+                        <p className="text-[35px] font-bold col-span-2">{studentInfo.firstName} {studentInfo.midName} {studentInfo.lastName}</p>
+                        <p className="text-[25px] font-bold col-span-2">{studentInfo.studentNumber} </p>
+                        <p className="text-lg font-bold">Official PLM Email: </p>
                         <p className="text-lg">{studentInfo.plmEmail}</p>
 
                         <p className="text-lg font-bold">Personal Email: </p>
@@ -50,17 +54,17 @@ export default function Account () {
                     </div>
                 </div>
 
-                <div className="mt-4 flex flex-row justify-center w-full pt-10">
+                <div className="mt-4 flex flex-row justify-center w-full ">
 
-                    <div className="flex flex-col w-1/6">
+                    <div className="flex flex-col w-1/6 ">
+                        <p className="text-xl font-bold pb-2">Username: 202011847</p>
                         <button className="bg-plm-red text-white px-4 py-2 mb-2 w-52">Change Pass</button>
-                        <button className="bg-plm-red text-white px-4 py-2 w-52">Log Out</button>
+
                     </div>
 
                     {/* Student information */}
-                    <div className="grid grid-cols-2 gap-2 ml-4 w-1/3">
-                        <p className="text-xl font-bold">STUDENT INFORMATION</p>
-                        <p className="my-5"></p>
+                    <div className="grid grid-cols-2 gap-2 ml-4 w-1/3 bg-white p-[2rem] w-[600px]  rounded-xl">
+                        <p className="text-[25px] font-bold col-span-2">STUDENT INFORMATION</p>
                         
                         <p className="text-lg font-bold">Personal Information</p>
                             <p className="my-5"></p>
@@ -113,14 +117,16 @@ export default function Account () {
                 </div>
 
             </div>
-            <div className="fixed bottom-0 right-0 z-0">
+            {/* <div className="fixed bottom-0 right-0 z-0">
                 <img
                 src={watermark_plm}
                 alt="Fixed Image"
                 className="w-52 h-auto "
                 />
-            </div>
+            </div> */}
         </main>
+       
+
     </>
     );
 
