@@ -13,7 +13,9 @@ export default function ViewGrades() {
                         <div className="col-span-1 border border-[#DAC898] px-4 py-2 text-center"> 3 </div>
                         <div className="col-span-1 border border-[#DAC898] px-4 py-2"> NONE </div>
                         <div className="col-span-1 border border-[#DAC898] px-4 py-2 text-center"> PASSED </div>
-                        <div className="col-span-1 border border-[#DAC898] px-4 py-2 text-center"> <button><img src={downl} width="10px" className="mx-auto" alt="" /></button> </div>
+                        <div className="col-span-1 border border-[#DAC898] px-4 py-2 text-center"> 
+                            <button><img src={downl} width="10px" className="mx-auto" alt="" /></button>
+                        </div>
 
                         <div className="col-span-1 border border-[#DAC898] px-4 py-2"> 2024-2025 </div>
                         <div className="col-span-1 border border-[#DAC898] px-4 py-2 text-center"> 2 </div>
