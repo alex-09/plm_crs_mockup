@@ -2,42 +2,38 @@ export default function ViewSched() {
     return (
         <div className="justify-center w-full  p-5">
                     <div className="justify-start">
-                    <table className="border table-fixed w-full shadow-md">
-                        <thead className="bg-plm-light-gold">
-                        <tr>
-                            <th className="border-b border-plm-light-gold">CLASS</th>
-                            <th className="border-b border-plm-light-gold">SECTION</th>
-                            <th className="border-b border-plm-light-gold">SCHEDULE</th>
-                            <th className="border-b border-plm-light-gold">CREDITS</th>
-                        </tr>
-                        </thead>
-                        <tbody className="bg-white">
-                        <tr>
-                            <td className="text-center border border-plm-light-gold">Mathematics 101</td>
-                            <td className="text-center border border-plm-light-gold">A</td>
-                            <td className="text-center border border-plm-light-gold">Mon/Wed 9:00 AM - 10:30 AM</td>
-                            <td className="text-center border border-plm-light-gold">3</td>
-                        </tr>
-                        <tr>
-                            <td className="text-center border border-plm-light-gold">Introduction to Literature</td>
-                            <td className="text-center border border-plm-light-gold">B</td>
-                            <td className="text-center border border-plm-light-gold">Tue/Thu 1:30 PM - 3:00 PM</td>
-                            <td className="text-center border border-plm-light-gold">4</td>
-                        </tr>
-                        <tr>
-                            <td className="text-center border border-plm-light-gold">Computer Science 201</td>
-                            <td className="text-center border border-plm-light-gold">C</td>
-                            <td className="text-center border border-plm-light-gold">Mon/Fri 10:45 AM - 12:15 PM</td>
-                            <td className="text-center border border-plm-light-gold">5</td>
-                        </tr>
-                        <tr>
-                            <td className="text-center border border-plm-light-gold">History of Art</td>
-                            <td className="text-center border border-plm-light-gold">A</td>
-                            <td className="text-center border border-plm-light-gold">Wed 2:00 PM - 4:00 PM</td>
-                            <td className="text-center border border-plm-light-gold">3</td>
-                        </tr>
-                        </tbody>
-                    </table>
+                        <div className="grid grid-cols-5 gap-2">
+                            <div className="col-span-1 border border-amber-400 px-4 py-2 bg-[#DAC898]">CLASS</div>
+                            <div className="col-span-1 border border-amber-400 px-4 py-2 bg-[#DAC898]">SECTION</div>
+                            <div className="col-span-1 border border-amber-400 px-4 py-2 bg-[#DAC898]">SCHEDULE</div>
+                            <div className="col-span-1 border border-amber-400 px-4 py-2 bg-[#DAC898]">INSTRUCTOR</div>
+                            <div className="col-span-1 border border-amber-400 px-4 py-2 bg-[#DAC898]">CREDITS</div>
+
+                            <div className="col-span-1 border border-[#DAC898] px-4 py-2"> Mathematics 101 </div>
+                            <div className="col-span-1 border border-[#DAC898] px-4 py-2 text-center"> A </div>
+                            <div className="col-span-1 border border-[#DAC898] px-4 py-2"> Mon/Wed 9:00 AM - 10:30 AM </div>
+                            <div className="col-span-1 border border-[#DAC898] px-4 py-2 text-center">  </div>
+                            <div className="col-span-1 border border-[#DAC898] px-4 py-2 text-center"> 3 </div>
+
+                            <div className="col-span-1 border border-[#DAC898] px-4 py-2"> Introduction to Literature </div>
+                            <div className="col-span-1 border border-[#DAC898] px-4 py-2 text-center"> B </div>
+                            <div className="col-span-1 border border-[#DAC898] px-4 py-2"> Tue/Thu 1:30 PM - 3:00 PM </div>
+                            <div className="col-span-1 border border-[#DAC898] px-4 py-2 text-center">  </div>
+                            <div className="col-span-1 border border-[#DAC898] px-4 py-2 text-center"> 4 </div>
+
+                            <div className="col-span-1 border border-[#DAC898] px-4 py-2"> Computer Science 201 </div>
+                            <div className="col-span-1 border border-[#DAC898] px-4 py-2 text-center"> C </div>
+                            <div className="col-span-1 border border-[#DAC898] px-4 py-2"> Mon/Fri 10:45 AM - 12:15 PM </div>
+                            <div className="col-span-1 border border-[#DAC898] px-4 py-2 text-center">  </div>
+                            <div className="col-span-1 border border-[#DAC898] px-4 py-2 text-center"> 5 </div>
+
+                            <div className="col-span-1 border border-[#DAC898] px-4 py-2"> History of Art </div>
+                            <div className="col-span-1 border border-[#DAC898] px-4 py-2 text-center"> A </div>
+                            <div className="col-span-1 border border-[#DAC898] px-4 py-2"> Wed 2:00 PM - 4:00 PM </div>
+                            <div className="col-span-1 border border-[#DAC898] px-4 py-2 text-center">  </div>
+                            <div className="col-span-1 border border-[#DAC898] px-4 py-2 text-center"> 3 </div>
+                        
+                        </div>
                     </div>
                 </div>
     )

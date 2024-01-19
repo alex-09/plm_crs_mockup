@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import SideBar from "../SideBar";
 import { useState } from "react";
-import ViewSched from './view/ViewSched';
+import ViewSched from './view/ViewGrades';
 
 const steps = [
     { id: 1, title: "Step 1" },
@@ -13,7 +13,8 @@ export default function ViewInfo () {
     const [activeStep, setActiveStep] = useState(1);
 
   const clickNextStep = () => {
-    setActiveStep((prevStep) => Math.min(prevStep + 1, steps.length));
+      setActiveStep((prevStep) => Math.min(prevStep + 1, steps.length));
+    
   };
 
   const clickPrevStep = () => {
@@ -50,14 +51,15 @@ export default function ViewInfo () {
           </ol>
 
         <h1 className="font-sans text-3xl font-bold text-plm-gold mt-10 mb-5">
-            {activeStep === 1 ? 'View Grades' : activeStep === 2 ? '' : ''}
+            {activeStep === 1 ? 'View Grades' : activeStep === 2 ? 'View Grades' : ''}
         </h1>
 
-        <div className="divide-y divide-slate-500">
+        <div className="divide-y divide-slate-500 w-full">
             {activeStep === 1 && <ViewSched />}
+            {activeStep === 2 && <ViewSched />}
         </div>
 
-        <div className="absolute bottom-0 right-0 p-4">
+        {/* <div className="absolute bottom-0 right-0 p-4">
             <div className="flex flex-row gap-4">
                 {activeStep > 1 && (
                 <button onClick={clickPrevStep} className="w-15 bg-plm-red text-white font-extrabold p-2 rounded-md">
@@ -68,7 +70,7 @@ export default function ViewInfo () {
                 Next
                 </button>
             </div>
-        </div>
+        </div> */}
 
           
         </div>

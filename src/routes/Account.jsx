@@ -11,8 +11,8 @@ export default function Account () {
         studentNumber: '202011847',
         studentType: 'Regular',
         regStatus: 'Paid', 
-        email: 'juandelaxruz@gmail.com',
-        mobileNum: '123-456-7890',
+        email: 'alexandeilingad@gmail.com',
+        mobileNum: '097-7680-1291',
         lastName: 'Ling',
         firstName: 'Andrei',
         midName: 'Aldave',
@@ -37,10 +37,10 @@ export default function Account () {
                 {/* Profile picture with email and mobile number */}
                 <div className="flex justify-center content-end mt-4 w-full">
                     
-                    <div className="align-top justify-center  mr-5">
+                    <div className="align-top justify-center  mr-12">
                         <img src={profile_pic} className="align-baseline pt-10" alt="Profile" />
                     </div>
-                    <div className="ml-4 w-1/3 grid grid-cols-2 gap-2 content-end bg-white p-[2rem] w-[600px] rounded-xl">
+                    <div className="ml-4 grid grid-cols-2 gap-2 content-end bg-white p-[2rem] w-[600px] rounded-xl">
                         <p className="text-[35px] font-bold col-span-2">{studentInfo.firstName} {studentInfo.midName} {studentInfo.lastName}</p>
                         <p className="text-[25px] font-bold col-span-2">{studentInfo.studentNumber} </p>
                         <p className="text-lg font-bold">Official PLM Email: </p>

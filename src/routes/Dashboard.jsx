@@ -12,17 +12,17 @@ export default function Dashboard () {
     const scheduledEvents = [
         {
             eventName : 'Teacher\'s Day',
-            eventDetail: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quisquam harum debitis dicta aliquam ratione quos mollitia nisi in, tempora veniam officiis voluptates minima itaque minus, beatae sapiente nobis eos.',
+            eventDetail: "Join us in celebrating Teacher's Day as we express our gratitude and appreciation for the dedicated educators who shape our future.",
             date: new Date(2023, 10, 1),
         },
         {
             eventName : 'Heroes\' Day',
-            eventDetail: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quisquam harum debitis dicta aliquam ratione quos mollitia nisi in, tempora veniam officiis voluptates minima itaque minus, beatae sapiente nobis eos.',
+            eventDetail: "Be a part of Heroes' Day as we honor and commemorate the bravery and sacrifices of individuals who have exemplified courage and selflessness in service to others",
             date: new Date(2023, 10, 15),
         },
         {
             eventName : 'Valentines\' Day',
-            eventDetail: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quisquam harum debitis dicta aliquam ratione quos mollitia nisi in, tempora veniam officiis voluptates minima itaque minus, beatae sapiente nobis eos.',
+            eventDetail: "Embrace the spirit of love and friendship by participating in our Valentine's Day event, where we celebrate the joy of connections and relationships in a warm and festive atmosphere.",
             date: new Date(2023, 10, 23),
         },
     ]
@@ -58,7 +58,7 @@ export default function Dashboard () {
         
                                         <div className="h-20 col-span-3">
                                             <h1 className="font-bold font-sans mb-2">{item.eventName}</h1>
-                                            <p className="line-clamp-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dignissimos facilis cum iure dolor praesentium dolorum laudantium, aspernatur ut libero? Vitae ab officia ut ipsam, consectetur ratione officiis delectus nesciunt.</p>
+                                            <p className="line-clamp-2">{item.eventDetail}</p>
                                         </div>
                                         {/* content end */}
                                         
@@ -84,7 +84,7 @@ export default function Dashboard () {
                         </div>
                     </div>
                 </div>
-                <div className="justify-center w-full  p-5">
+                {/* <div className="justify-center w-full  p-5">
                     <div className="justify-start">
                         <h1 className="font-bold font-sans mb-2">CLEARANCE</h1>
                         <table className="border table-fixed w-full shadow-md">
@@ -106,7 +106,7 @@ export default function Dashboard () {
                             </tbody>
                         </table>
                     </div>
-                </div>
+                </div> */}
             </div>
 
             {/* Change into a background */}
